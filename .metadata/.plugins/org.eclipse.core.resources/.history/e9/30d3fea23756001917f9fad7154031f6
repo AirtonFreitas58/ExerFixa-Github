@@ -1,0 +1,28 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class exSenha01 {
+
+	public static void main(String[] args) {
+		// des
+		
+		Scanner sc = new Scanner(System.in);
+		int cupSenha = 2002;
+		int mySenha = sc.nextInt();
+		
+		while (mySenha != cupSenha) {
+			int conte ++;
+			if (conte > 3) {
+				System.out.println("Senha Invalida, Acesso Cancelado");
+			} else {	
+			System.out.println("Senha Invalida, Acesso Negado");
+			mySenha = sc.nextInt();
+			}
+		}
+			System.out.println("Acesso Permitido");
+			
+		sc.close();	
+	}
+	
+}
